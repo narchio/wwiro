@@ -1,33 +1,56 @@
 import React, { Component } from "react";
-import FormStep3 from '../classes/FormStep3'; 
+import FormStep3 from '../classes/FormStep3';
 
 export default class Step3 extends React.Component {
+    state = {
+        dailyValues: this.props.location
+    }
 
-    // state = {
-    //     grainsList: [], 
-    //     grainsCount: 0
+    // /**
+    //  * Shows the table
+    //  */
+    // renderTable() {
+    //     return this.state.dailyValues.map((val, index) => {
+    //         const { grains, veg, fruit, dairy, protein } = val
+    //         return (
+    //             <tr key={grains}>
+    //                 <td>{grains}</td>
+    //                 <td>{veg}</td>
+    //                 <td>{fruit}</td>
+    //                 <td>{dairy}</td>
+    //                 <td>{protein}</td>
+    //             </tr>
+    //         )
+    //     })
     // }
 
-    // onSubmit = (grainsList) => {
-    //     var entry = grainsList
-    //     var newFields = this.state.grainsList; 
-    //     newFields.push(entry); 
-    //     console.log("quant: ", grainsList.quantity); 
-    //     console.log("this.state.grainsCount", this.state.grainsCount); 
-    //     this.setState({ 
-    //         grainsList: newFields, 
-    //         grainsCount: (+this.state.grainsCount) + (+grainsList.quantity)
-    //      })
-    // }; 
-    
+    // /**
+    //  * Shows the table header
+    //  */
+    // renderTableHeader() {
+    //     if (this.state.dailyValues.length > 0) {
+    //         let header = Object.keys(this.state.dailyValues[0])
+    //         return header.map((key, index) => {
+    //             return <th key={index}>{key.toUpperCase()}</th>
+    //         })
+    //     }
+    // }
+
     render() {
         return (
             <div className="Step3">
-                <FormStep3 />
-                {/* <FormStep3 onSubmit={grainsList => this.onSubmit(grainsList)}/> */}
-                {/* <p>{JSON.stringify(this.state.grainsList, null, 2)}</p> ---> table here
-                <p>{JSON.stringify(this.state.grainsCount, null, 2)}</p> ---> count here } */}
-                {/* <p>{JSON.stringify(this.props.state.familyMembers[0], null, 5)}</p> ---> table here */}
+                {/* <FormStep3 /> */}
+                <p>{JSON.stringify(this.props.location, null, 2)}</p> ---> table here
+
+                {/* <div>
+                    <h1 id='title'>You have...</h1>
+                    <table id='dailyValues'>
+                        <tbody>
+                            <tr>{this.renderTableHeader()}</tr>
+                            {this.renderTable()}
+                        </tbody>
+                    </table>
+                </div> */}
             </div>
         );
     }

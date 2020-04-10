@@ -6,6 +6,25 @@ import Person from "../classes/Person";
 import history from '../classes/history'; 
 // https://www.choosemyplate.gov/eathealthy/grains
 
+function countFoods(familyMembers, num) {
+  var i;  
+  var count = 0
+  for (i = 0; i < familyMembers.length; i++) {
+    if (num === 0) {
+      count += familyMembers[i].grain; 
+    } else if (num === 1) {
+      count += familyMembers[i].veg; 
+    } else if (num === 2) {
+      count += familyMembers[i].fruit; 
+    } else if (num === 3) {
+      count += familyMembers[i].dairy; 
+    } else if (num === 4) {
+      count += familyMembers[i].protein; 
+    }
+  }
+  return +count; 
+}
+
 class App extends Component { 
   state = {
     familyMembers: []
@@ -34,8 +53,19 @@ class App extends Component {
    * Transitions to step 2
    */
   continueToStep2 = (e) => {
+    let famData = [{
+      grains: countFoods(this.state.familyMembers, 0),  
+      veg: countFoods(this.state.familyMembers, 1), 
+      fruit: countFoods(this.state.familyMembers, 2), 
+      dairy: countFoods(this.state.familyMembers, 3), 
+      protein: countFoods(this.state.familyMembers, 4)
+    }]
+    console.log(famData); 
     // go to next page
-    history.push(('/Step2'), this.state.familyMembers); 
+    history.push({
+      pathname: ('/Step2'), 
+      famData: famData
+    });      
   }; 
 
   /**
