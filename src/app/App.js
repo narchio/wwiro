@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import SplitPane from 'react-split-pane'; 
+import Pane from 'react-split-pane'; 
 // import logo from './logo.svg';
-import './App.css';
+import '../stylesheets/front_page.css';
 import Form from "../classes/Form"; 
 import Person from "../classes/Person"; 
 import history from '../classes/history'; 
@@ -34,25 +36,27 @@ class App extends Component {
    * onSubmit adds a new Person entry to the family members list
    */
   onSubmit = (familyMembers) => {
-    var entry = new Person(familyMembers.firstName, familyMembers.category, familyMembers.age); 
+    var entry = new Person(familyMembers.category, familyMembers.age); 
     var newFields = this.state.familyMembers; 
     newFields.push(entry); 
     this.setState({ newFields })
   }; 
 
   /**
-   * Resets list of Family members
+   * Deletes last entry in the list of Family members
    */
   resetFam = (e) => {
+    this.state.familyMembers.pop(); 
+    var newFamilyMembers = this.state.familyMembers; 
     this.setState({
-      familyMembers: []
+      familyMembers: newFamilyMembers
     })
   }; 
 
   /**
    * Transitions to step 2
    */
-  continueToStep2 = (e) => {
+  continueToStepGrains = (e) => {
     let famData = [{
       grains: countFoods(this.state.familyMembers, 0),  
       veg: countFoods(this.state.familyMembers, 1), 
@@ -63,7 +67,7 @@ class App extends Component {
     console.log(famData); 
     // go to next page
     history.push({
-      pathname: ('/Step2'), 
+      pathname: ('/StepGrains'), 
       famData: famData
     });      
   }; 
@@ -73,12 +77,11 @@ class App extends Component {
    */
   renderTable() {
     return this.state.familyMembers.map((member, index) => {
-      const { firstName, age, category} = member 
+      const {age, category} = member 
       return (
-        <tr key={firstName}>
-          <td>{firstName}</td>
-          <td>{age}</td>
+        <tr key={age}>
           <td>{category}</td>
+          <td>{age}</td>
         </tr>
       )
     })
@@ -91,9 +94,9 @@ class App extends Component {
     if (this.state.familyMembers.length > 0) {
       let header = Object.keys(this.state.familyMembers[0])
       var count = 0; 
-      let newHeader = header.splice(0, 3); 
+      let newHeader = header.splice(0, 2); 
       return newHeader.map((key, index) => {
-        if (count < 3) {
+        if (count < 2) {
           return <th key={index}>{key.toUpperCase()}</th>
         }
         count++; 
@@ -106,21 +109,18 @@ class App extends Component {
    */
   render() {
     return (
-      <div className="App">
-        <Form onSubmit={familyMembers => this.onSubmit(familyMembers)}/>
-        <button onClick={e => this.resetFam(e)}>reset</button> <br /> <br />
-        {/* <p>{JSON.stringify(this.state.familyMembers, null, 5)}</p> ---> table here */}
-        <div>
-            <h1 id='title'>Your Family Members</h1>
-            <table id='familyMembers'>
-               <tbody>
-                  <tr>{this.renderTableHeader()}</tr>
-                  {this.renderTable()}
-               </tbody>
-            </table>
-          </div>
-          <button onClick={e => this.continueToStep2(e)}>Continue to Step 2</button>
-        </div>
+      <div className="App" id="frame">
+          <Form id="landing_page" onSubmit={familyMembers => this.onSubmit(familyMembers)}/>
+          <h1 id='table_header'>Who you have added</h1>
+          <table id='members_table'>
+              <tbody>
+                <tr>{this.renderTableHeader()}</tr>
+                {this.renderTable()}
+              </tbody>
+          </table>
+          <button id="delete_button" onClick={e => this.resetFam(e)}>Delete Last Entry</button> <br /> <br />
+          <button id='continue_button' onClick={e => this.continueToStepGrains(e)}>Continue to Next Step</button>
+        </div> 
     );
   }
 }

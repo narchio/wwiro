@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { grainLabels, vegLabels, fruitLabels, dairyLabels, proteinLabels } from './foodLabels_Values'
+import {Grains} from '../foods/Foods'; 
 
 export default class FormStep2 extends React.Component {
     state = {
@@ -67,6 +68,8 @@ export default class FormStep2 extends React.Component {
 
     render() {
         return (
+            <Grains />
+
             <form>
                 <p>Please enter your grains...</p>               
                 <select defaultValue={this.state.type} onChange={e => this.changeType(e)} >

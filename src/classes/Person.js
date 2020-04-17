@@ -11,9 +11,7 @@ const Ages = {
 }; 
 Object.freeze(Ages); 
 
-
-export default function Person(name, category, age) {
-    this.firstName = name; 
+export default function Person(category, age) {
     this.category = category; 
     this.age = age; 
     // Man: 19-30 yrs, 31-50 yrs, 51+ yrs 

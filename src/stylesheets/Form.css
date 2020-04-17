@@ -1,0 +1,79 @@
+.Form {
+    /* background */ 
+    position: absolute;
+    /* object-position: 50% 50%; */
+    width: 602px;
+    height: 543px;
+    left: 76.79px;
+    top: 194.12px;
+
+    background: #F9FBFF;
+    border-radius: 12px;
+}
+.Form #age_input {
+    /* age button */
+    position: absolute;
+    width: 350px;
+    height: 41px;
+    left: 211.79px;
+    top: 280.12px;
+
+    background: #FFFEFE;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 12px;
+    /* Age font*/
+    font-family: Suwannaphum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #000000;
+}
+.Form #category_selector {
+    /* Identifies as button */
+    position: absolute;
+    width: 354px;
+    height: 42px;
+    left: 211.79px;
+    top: 373.12px;
+    
+    background: #FFFEFE;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 12px;
+    /* Identifies as... */
+    font-family: Suwannaphum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    
+    color: #000000;
+}
+.Form #add_button {
+    /* Add button */
+    position: absolute;
+    width: 151px;
+    height: 42px;
+    left: 312.79px;
+    top: 438.12px;
+    background: #0C4FFA;
+    border: 1px solid #FFFDFD;
+    box-sizing: border-box;
+    border-radius: 12px;
+    /* Add */
+    font-family: Suwannaphum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+    

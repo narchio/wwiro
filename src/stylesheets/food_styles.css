@@ -1,0 +1,368 @@
+/* Frame 1 */
+#frame {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgb(255, 255, 255);
+	
+}
+ 
+/* background */
+#n3_30 {
+	background: rgb(248, 250, 255);
+	border-radius: 12px;
+	left: 76.7851px;
+	width: 602px;
+	top: 194.117px;
+	height: 325px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* background light blue 2 */
+#n3_300 {
+	background: rgb(248, 250, 255);
+	border-radius: 12px;
+	left: 76.7851px;
+	width: 700px;
+	top: 194.117px;
+	height: 325px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+
+/* Rectangle 2 */
+#n1_5 {
+	background: rgb(255, 255, 255);
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 57.7851px;
+	width: 635px;
+	top: 6.11667px;
+	height: 32px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* I-inventory */
+#iinventory_label {
+	font-family: Suwannaphum;
+	font-size: 100px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(39, 52, 168);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 527px;
+	transform: translate(0px, 0px);
+	line-height: 117.188px;
+	height: 86px;
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px; */
+	left: 114.785px;
+	top: 14.1167px;
+	padding-bottom: 3%;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* your daily nutriontal needs - calculated */
+#description_label {
+	font-family: Suwannaphum;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(130, 125, 125);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 481px;
+	transform: translate(0px, 0px);
+	line-height: 25.75px;
+	height: 57px;
+	left: 134.785px;
+	top: 149.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* Begin by telling us who you’re feeding */
+#instructions_label {
+	font-family: Suwannaphum;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 569px;
+	transform: translate(0px, 0px);
+	line-height: 29.2969px;
+	height: 73px;
+	left: 100.785px;
+	top: 203.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* Begin by telling us who you’re feeding */
+#item_label {
+	font-family: Suwannaphum;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 569px;
+	transform: translate(0px, 0px);
+	line-height: 29.2969px;
+	height: 73px;
+	left: 100.785px;
+	top: 203.117px;
+	padding-top: 2%;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* Who you have added */
+#table_header {
+	font-family: Suwannaphum;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 569px;
+	transform: translate(0px, 0px);
+	line-height: 29.2969px;
+	height: 73px;
+	left: 100.785px;
+	top: 504.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* Line 1 */
+#n1_12 {
+	left: 98.7821px;
+	width: 553.006px;
+	top: 184.593px;
+	height: 3.04727px;
+	margin: 0 auto; 
+	display: block; 
+	padding-bottom: 2%;
+}
+
+
+/* age button */
+#age_input {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 350px;
+	top: 280.117px;
+    height: 41px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Age */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+/* quantity button */
+#quantity {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 350px;
+	top: 280.117px;
+    height: 41px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Age */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+/* Identifies as button */
+#category_selector {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 354px;
+	top: 373.117px;
+    height: 42px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Identifies as... */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+/* Add button */
+#add_button {
+	background: rgb(12, 78, 249);
+	border-radius: 12px;
+	box-shadow: rgb(255, 252, 252) 0px 0px 0px 1px inset;
+	left: 312.785px;
+	width: 151px;
+	top: 438.117px;
+    height: 42px;
+    margin: 0 auto; 
+    display: block; 
+
+	/* Add */
+	font-family: Suwannaphum;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+
+
+/* Delete button */
+#delete_button {
+	background: rgb(12, 78, 249);
+	border-radius: 12px;
+	box-shadow: rgb(255, 252, 252) 0px 0px 0px 1px inset;
+	left: 312.785px;
+	width: 151px;
+	top: 438.117px;
+	height: 42px;
+
+	/* delete */
+	font-family: Suwannaphum;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 184px;
+	transform: translate(0px, 0px);
+	line-height: 23.4375px;
+	height: 28px;
+	left: 296.785px;
+	top: 443.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* text styling for members name */
+#n2_0 {
+	font-family: Suwannaphum;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 400px;
+	transform: translate(0px, 0px);
+	line-height: 29.2969px;
+	height: 52px;
+	left: 186.785px;
+	top: 550.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+/* Continue button */
+#continue_button {
+	background: rgb(12, 78, 249);
+	border-radius: 12px;
+	box-shadow: rgb(255, 252, 252) 0px 0px 0px 1px inset;
+	left: 518.785px;
+	width: 151px;
+	top: 629.117px;
+	height: 42px;
+
+	/* Continue */
+	font-family: Suwannaphum;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	width: 225px;
+	transform: translate(0px, 0px);
+	line-height: 23.4375px;
+	height: 35px;
+	left: 501.785px;
+	top: 634.117px;
+	margin: 0 auto; 
+    display: block; 
+}
+
+#members_table {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 50%;
+  margin: 0 auto; 
+  /* display: block; */
+}
+
+#members_table td, #members_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#members_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#members_table tr:hover {background-color: #ddd;}
+
+#members_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  /* background-color: rgb(92, 194, 143); */
+  background-color: rgb(115, 186, 233);
+
+  color: white;
+} 

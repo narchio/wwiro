@@ -1,0 +1,96 @@
+/* age button */
+#age_input {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 350px;
+	top: 280.117px;
+    height: 41px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Age */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+/* quantity button */
+#quantity {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 350px;
+	top: 280.117px;
+    height: 41px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Age */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+/* Identifies as button */
+#category_selector {
+	background: rgb(255, 253, 253);
+	border-radius: 12px;
+	box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px inset;
+	left: 211.785px;
+	width: 354px;
+	top: 373.117px;
+    height: 42px;
+    margin-bottom: 5%; 
+    margin: 0 auto; 
+    display: block; 
+
+	/* Identifies as... */
+	font-family: Suwannaphum;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+/* Add button */
+#add_button {
+	background: rgb(12, 78, 249);
+	border-radius: 12px;
+	box-shadow: rgb(255, 252, 252) 0px 0px 0px 1px inset;
+	left: 312.785px;
+	width: 151px;
+	top: 438.117px;
+    height: 42px;
+    margin: 0 auto; 
+    display: block; 
+
+	/* Add */
+	font-family: Suwannaphum;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
