@@ -1,7 +1,7 @@
 import React from 'react'; 
 import {proteinLabels} from '../classes/foodLabels_Values'
 
-export default class Dairy extends React.Component {
+export default class Proteins extends React.Component {
     state = {
         type: "meat_lean_un", 
         quantity: 0, 
