@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To View the Live Website, feel free to checck out the link below: 
+## To view the live website, click the link below: 
   http://i-inventory.s3-website-us-east-1.amazonaws.com
 
 
