@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# When Will I Run Out? 
+  When Will I Run Out? Is a household food calculator, based on the CDC's nutritional guidelines, to give an estimate of how many days of fully nutritious meals that you can make, given on-hand ingredients.  
 
 ## To view the live website, click the link below: 
   http://i-inventory.s3-website-us-east-1.amazonaws.com
